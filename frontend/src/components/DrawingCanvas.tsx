@@ -86,7 +86,7 @@ function DrawingCanvas() {
     const base64Image = resizedCanvas.toDataURL("image/png");
 
     try {
-      const res = await fetch("http://localhost:5050/predict", {
+      const res = await fetch("https://digit-predictor-d7qz.onrender.com", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ image: base64Image }),
