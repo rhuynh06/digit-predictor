@@ -10,7 +10,7 @@ A full-stack AI web app that predicts handwritten digits as you draw them.
 
 Tech Stack
 
-- **Frontend**: React + Vite  
+- **Frontend**: React + TypeScript
 - **Backend**: Flask + TensorFlow  
 - **ML Model**: CNN trained on MNIST  
 - **Image Processing**: Canvas to 28x28 grayscale conversion with Pillow  
