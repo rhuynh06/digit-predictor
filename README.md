@@ -2,7 +2,7 @@
 
 A full-stack AI web app that predicts handwritten digits as you draw them.
 
-- Draw a digit (0–9) on a canvas in your browser  
+- Draw a digit (0-9) on a canvas in your browser  
 - The app uses a trained AI model to predict the digit in real time  
 - Built using React (frontend) and Flask (backend)  
 - Model is a Convolutional Neural Network (CNN) trained on the MNIST dataset  

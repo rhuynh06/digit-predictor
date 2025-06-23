@@ -1,4 +1,5 @@
 import React, { useRef, useState, useEffect } from "react";
+import { BACKEND_URL } from "../config";
 
 function DrawingCanvas() {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
@@ -97,7 +98,7 @@ function DrawingCanvas() {
     const base64Image = resizedCanvas.toDataURL("image/png");
 
     try {
-      const res = await fetch("https://digit-predictor-jy2a.onrender.com/predict", {
+      const res = await fetch(`${BACKEND_URL}/predict`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ image: base64Image }),

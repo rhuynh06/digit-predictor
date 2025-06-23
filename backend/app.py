@@ -21,6 +21,7 @@ def predict():
         response.headers.add("Access-Control-Allow-Origin", "https://rhuynh06.github.io")
         response.headers.add("Access-Control-Allow-Headers", "Content-Type")
         response.headers.add("Access-Control-Allow-Methods", "POST, OPTIONS")
+        response.headers.add("Access-Control-Allow-Origin", request.headers.get("Origin", ""))
         return response
 
     try:
