@@ -9,7 +9,7 @@ import base64
 app = Flask(__name__)
 
 # Allow only frontend at localhost:5173
-CORS(app, resources={r"/predict": {"origins": "http://localhost:5173"}})
+CORS(app, resources={r"/predict": {"origins": "https://rhuynh06.github.io/digit-predictor/"}})
 
 # Load model once at startup
 model = tf.keras.models.load_model("mnist_digit_cnn_model.keras")
