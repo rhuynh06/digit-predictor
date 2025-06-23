@@ -70,7 +70,7 @@ function DrawingCanvas() {
     if (predictTimeout.current) clearTimeout(predictTimeout.current);
     predictTimeout.current = setTimeout(() => {
       predictDigit();
-    }, 10);
+    }, 300);
   };
 
   const clearCanvas = () => {
