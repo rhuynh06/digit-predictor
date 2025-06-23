@@ -1,4 +1,4 @@
-# MNIST Digit Predictor
+# [MNIST Digit Predictor](https://rhuynh06.github.io/digit-predictor/)
 
 A full-stack AI web app that predicts handwritten digits as you draw them.
 
@@ -23,7 +23,7 @@ Features
 - Preprocessing and normalization for accurate AI inference  
 - RESTful API using JSON and base64 image data  
 
-How to Run
+How to Run Locally (much faster!!)
 
 ```bash
 cd backend
