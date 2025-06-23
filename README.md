@@ -1,4 +1,4 @@
-# [MNIST Digit Predictor](https://rhuynh06.github.io/digit-predictor/)
+# MNIST Digit Predictor
 
 A full-stack AI web app that predicts handwritten digits as you draw them.
 
