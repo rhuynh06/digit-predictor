@@ -71,7 +71,7 @@ function DrawingCanvas() {
     if (predictTimeout.current) clearTimeout(predictTimeout.current);
     predictTimeout.current = setTimeout(() => {
       predictDigit();
-    }, 10); // modify for debound speed
+    }, 300); // modify for debound speed (the lower the faster it updates)
   };
 
   const clearCanvas = () => {
