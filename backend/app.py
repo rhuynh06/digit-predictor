@@ -17,6 +17,7 @@ model = tf.keras.models.load_model("mnist_digit_cnn_model.keras")
 def predict():
     if request.method == "OPTIONS":
         response = make_response()
+        response.status_code = 204
         response.headers.add("Access-Control-Allow-Origin", "https://rhuynh06.github.io")
         response.headers.add("Access-Control-Allow-Headers", "Content-Type")
         response.headers.add("Access-Control-Allow-Methods", "POST, OPTIONS")
