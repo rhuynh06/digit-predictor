@@ -10,15 +10,6 @@ A full-stack AI web app that predicts handwritten digits as you draw them.
 
 ---
 
-## Tech Stack
-
-- **Frontend**: React, TypeScript, HTML5 Canvas  
-- **Backend**: Flask, TensorFlow, NumPy, Pillow  
-- **ML Model**: CNN trained on MNIST  
-- **Image Processing**: Canvas → 28×28 grayscale image using Pillow  
-
----
-
 ## Features
 
 - Interactive canvas with adjustable brush size  
@@ -28,11 +19,22 @@ A full-stack AI web app that predicts handwritten digits as you draw them.
 - REST API using JSON and base64-encoded image data  
 - Hosted version (Render backend + GitHub Pages frontend)  
 
+---
+
+## Tech Stack
+
+- **Frontend**: React, TypeScript, HTML5 Canvas  
+- **Backend**: Flask, TensorFlow, NumPy, Pillow  
+- **ML Model**: CNN trained on MNIST  
+- **Image Processing**: Canvas → 28×28 grayscale image using Pillow
+
+---
+
 ## Run Locally (Recommended for Best Performance)
 
 ```bash
 # Clone the repo
-git clone https://github.com/yourusername/digit-predictor.git
+git clone https://github.com/rhuynh06/digit-predictor.git
 cd digit-predictor
 
 # Backend setup
