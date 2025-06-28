@@ -40,7 +40,7 @@ cd digit-predictor
 # Backend setup
 cd backend
 pip install flask flask-cors tensorflow pillow numpy
-python app_local.py  # Runs at http://localhost:5050
+python app.py  # Runs at http://localhost:5050
 
 # Frontend setup (in a new terminal)
 cd ../frontend
