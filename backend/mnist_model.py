@@ -18,8 +18,9 @@ x_test = x_test.reshape(-1, 28, 28, 1)
 
 # Build the CNN model
 model = models.Sequential([
-    layers.Conv2D(32, (3, 3), activation='relu', input_shape=(28, 28, 1)), #ReLU, Convolutional Layer
-    layers.MaxPooling2D((2, 2)), #Kernel - 2x2 - 1 single number Max - 
+    keras.Input(shape=(28, 28, 1)),
+    layers.Conv2D(32, (3, 3), activation='relu'),
+    layers.MaxPooling2D((2, 2)), # 1 digit max
     layers.Conv2D(64, (3, 3), activation='relu'), 
     layers.MaxPooling2D((2, 2)),
     layers.Flatten(),
