@@ -8,13 +8,21 @@ import matplotlib.pyplot as plt
 mnist = tf.keras.datasets.mnist
 (x_train, y_train), (x_test, y_test) = mnist.load_data()
 
-# Normalize the data (scaling pixel values to range 0-1) 0.1, -0.1, 0.3 
+# Normalize pixel values
 x_train = x_train / 255.0
 x_test = x_test / 255.0
 
 # Reshape for CNN (adding channel dimension) 28 x28 pixels, 3 RGB, 1 Greyscale
 x_train = x_train.reshape(-1, 28, 28, 1)
 x_test = x_test.reshape(-1, 28, 28, 1)
+
+# Slice smaller subsets for faster runs
+train_samples = 10000
+test_samples = 2000
+x_train = x_train[:train_samples]
+y_train = y_train[:train_samples]
+x_test = x_test[:test_samples]
+y_test = y_test[:test_samples]
 
 # Build the CNN model
 model = models.Sequential([
