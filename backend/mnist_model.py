@@ -58,4 +58,5 @@ plt.show()
 
 # Save the model
 model.save('mnist_digit_cnn_model.keras')
- 
+
+# To save training results for proof: python mnist_cnn.py > training_log.txt 2>&1
